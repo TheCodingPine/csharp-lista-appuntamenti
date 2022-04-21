@@ -58,7 +58,11 @@ namespace lista_appuntamenti
 
         //metodo per cambiare Date "dove riceverà un nuovo oggetto di tipo DateTime" + exception se antecedente
 
-        
+        internal DateTime dataChanger(DateTime newData)
+        {
+            isDataValida(newData);
+            return this.data;
+        }
 
 
         //getter
