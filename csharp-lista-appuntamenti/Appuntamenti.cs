@@ -61,11 +61,22 @@ namespace lista_appuntamenti
         
 
 
+        //getter
 
+        public DateTime GetData()
+        {
+            return this.data;
+        }
 
+        public string GetNome()
+        {
+            return this.nome;
+        }
 
-
-
+        public string GetLuogo()
+        {
+            return this.luogo;
+        }
 
 
 
