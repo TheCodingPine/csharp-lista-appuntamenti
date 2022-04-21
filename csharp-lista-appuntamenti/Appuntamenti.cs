@@ -12,15 +12,34 @@ La classe Appuntamento avrà:
 
 namespace lista_appuntamenti
 {
-    internal class Appuntamenti
+    internal class Appuntamento
     {
         private string nome;
-        private string localitaAppuntamento;
-        public DateTime;
+        private string luogo;
+        public DateTime data;
 
         //costruttore che inizializza i campi e controlli che la data non sia antecedente + exception
 
-        //metodo per cambiare Date "dove riceverà un nuovo oggetto di tipo DateTime" + exception se amtecedente
+        public Appuntamento(string nome, string luogo, DateTime data)
+        {
+            try
+            {
+                //metodo per vedere se la data è giusta (this.data);
+            }
+            catch (Exception ex) //consigliata dal compiler et https://docs.microsoft.com/it-it/dotnet/csharp/language-reference/keywords/try-catch
+            {
+                Console.WriteLine("Eccezione:" + ex.Message); //consigliato dal compiler!
+            }
+
+            this.nome = nome;
+            this.luogo = luogo;
+            this.data = data;
+
+        }
+
+        //metodo per cambiare Date "dove riceverà un nuovo oggetto di tipo DateTime" + exception se antecedente
+
+        
 
 
 
