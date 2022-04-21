@@ -15,5 +15,13 @@ while (numeroDiAppuntamenti > 0) //suggerito dall'IDE
 {
     Console.Write("Nome dell'appuntamento: ");
     string nome = Console.ReadLine();
-    Console.Write("")
+    Console.Write("Data: ");
+    DateTime data = DateTime.Parse(Console.ReadLine());
+    Console.Write("Luogo: ");
+    string luogo = Console.ReadLine();
+
+    listaAppuntamenti.Add(new Appuntamento(nome, luogo, data)); //ricordati che la posizione delle variabili è vitale
+    numeroDiAppuntamenti--;
+
+
 }
